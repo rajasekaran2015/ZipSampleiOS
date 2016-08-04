@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZipManager.h"
+
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *zipPwd;
+@property (weak, nonatomic) IBOutlet UITextField *pwdUnZip;
+@property (weak, nonatomic) IBOutlet UILabel *status;
+
+- (IBAction)zipBtnAction:(id)sender;
+- (IBAction)unZipBtnAction:(id)sender;
 
 @end
 

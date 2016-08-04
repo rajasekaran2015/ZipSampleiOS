@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A254g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,88 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password to Zip" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXR-IH-6Eb">
+                                <rect key="frame" x="40" y="90" width="196" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="Q9H-ne-hVf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LYF-HF-avo">
+                                <rect key="frame" x="249" y="86" width="289" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password to UnZip" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiK-gk-ebv">
+                                <rect key="frame" x="40" y="218" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sq-3o-AFW">
+                                <rect key="frame" x="249" y="214" width="289" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvy-10-KwG">
+                                <rect key="frame" x="249" y="266" width="126" height="30"/>
+                                <state key="normal" title="Click to UnZip"/>
+                                <connections>
+                                    <action selector="unZipBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2Z-ik-T7D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGn-ym-uyW">
+                                <rect key="frame" x="40" y="334" width="498" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.27450981740000002" green="0.48627451059999999" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkz-qU-ois">
+                                <rect key="frame" x="249" y="140" width="126" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="kam-yj-hOG"/>
+                                </constraints>
+                                <state key="normal" title="Click to Zip"/>
+                                <connections>
+                                    <action selector="zipBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gna-aE-q9z"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vGn-ym-uyW" firstAttribute="top" secondItem="pvy-10-KwG" secondAttribute="bottom" constant="38" id="8Nb-2q-CDe"/>
+                            <constraint firstItem="Wkz-qU-ois" firstAttribute="trailing" secondItem="pvy-10-KwG" secondAttribute="trailing" id="EHJ-5l-9jN"/>
+                            <constraint firstItem="LYF-HF-avo" firstAttribute="leading" secondItem="Wkz-qU-ois" secondAttribute="leading" id="Eww-bV-ZRO"/>
+                            <constraint firstItem="LXR-IH-6Eb" firstAttribute="trailing" secondItem="EiK-gk-ebv" secondAttribute="trailing" id="Gh3-tE-LxF"/>
+                            <constraint firstItem="4sq-3o-AFW" firstAttribute="trailing" secondItem="vGn-ym-uyW" secondAttribute="trailing" id="I8X-X6-6g0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LYF-HF-avo" secondAttribute="trailing" constant="42" id="MGp-JC-kPR"/>
+                            <constraint firstItem="pvy-10-KwG" firstAttribute="top" secondItem="4sq-3o-AFW" secondAttribute="bottom" constant="22" id="MOV-vX-Z6P"/>
+                            <constraint firstItem="LXR-IH-6Eb" firstAttribute="leading" secondItem="EiK-gk-ebv" secondAttribute="leading" id="OxE-iG-w4H"/>
+                            <constraint firstItem="Wkz-qU-ois" firstAttribute="top" secondItem="LYF-HF-avo" secondAttribute="bottom" constant="24" id="QAB-JS-jBB"/>
+                            <constraint firstItem="4sq-3o-AFW" firstAttribute="leading" secondItem="pvy-10-KwG" secondAttribute="leading" id="Ugx-Z6-Tvj"/>
+                            <constraint firstItem="LXR-IH-6Eb" firstAttribute="centerY" secondItem="LYF-HF-avo" secondAttribute="centerY" id="ayK-6X-DDX"/>
+                            <constraint firstItem="LXR-IH-6Eb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="bEb-gE-QTa"/>
+                            <constraint firstItem="EiK-gk-ebv" firstAttribute="centerY" secondItem="4sq-3o-AFW" secondAttribute="centerY" id="cVx-U3-Obq"/>
+                            <constraint firstItem="Wkz-qU-ois" firstAttribute="leading" secondItem="4sq-3o-AFW" secondAttribute="leading" id="k2d-aO-M1k"/>
+                            <constraint firstItem="EiK-gk-ebv" firstAttribute="leading" secondItem="vGn-ym-uyW" secondAttribute="leading" id="lNF-ge-uJy"/>
+                            <constraint firstItem="4sq-3o-AFW" firstAttribute="top" secondItem="Wkz-qU-ois" secondAttribute="bottom" constant="44" id="lP6-n1-9fY"/>
+                            <constraint firstItem="LYF-HF-avo" firstAttribute="trailing" secondItem="4sq-3o-AFW" secondAttribute="trailing" id="ng8-MQ-CR7"/>
+                            <constraint firstItem="LYF-HF-avo" firstAttribute="leading" secondItem="LXR-IH-6Eb" secondAttribute="trailing" constant="13" id="q3O-Gh-Wf0"/>
+                            <constraint firstItem="LYF-HF-avo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="uF9-aB-YvA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pwdUnZip" destination="4sq-3o-AFW" id="obB-R3-R3Z"/>
+                        <outlet property="status" destination="vGn-ym-uyW" id="NFd-5y-zA6"/>
+                        <outlet property="zipPwd" destination="LYF-HF-avo" id="Eof-eS-h38"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="136"/>
         </scene>
     </scenes>
 </document>

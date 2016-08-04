@@ -16,6 +16,12 @@
 		8410CBE01D53B47B00B76BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410CBDE1D53B47B00B76BA3 /* LaunchScreen.storyboard */; };
 		8410CBEB1D53B47B00B76BA3 /* ZipSampleiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410CBEA1D53B47B00B76BA3 /* ZipSampleiOSTests.m */; };
 		8410CBF61D53B47B00B76BA3 /* ZipSampleiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410CBF51D53B47B00B76BA3 /* ZipSampleiOSUITests.m */; };
+		8410CC051D53B5AA00B76BA3 /* Android.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8410CC031D53B5AA00B76BA3 /* Android.pdf */; };
+		8410CC061D53B5AA00B76BA3 /* Apple.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8410CC041D53B5AA00B76BA3 /* Apple.pdf */; };
+		8410CC4E1D53B89600B76BA3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8410CC4D1D53B89600B76BA3 /* libz.tbd */; };
+		8410CC551D53BDB800B76BA3 /* libZipArchive-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8410CC541D53BDB800B76BA3 /* libZipArchive-ios.a */; };
+		8410CC591D53CC2A00B76BA3 /* ZipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410CC581D53CC2A00B76BA3 /* ZipManager.m */; };
+		8410CC5A1D53CC2A00B76BA3 /* ZipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410CC581D53CC2A00B76BA3 /* ZipManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,13 @@
 		8410CBF11D53B47B00B76BA3 /* ZipSampleiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipSampleiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8410CBF51D53B47B00B76BA3 /* ZipSampleiOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipSampleiOSUITests.m; sourceTree = "<group>"; };
 		8410CBF71D53B47B00B76BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8410CC031D53B5AA00B76BA3 /* Android.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Android.pdf; path = ../../../../Desktop/Android.pdf; sourceTree = "<group>"; };
+		8410CC041D53B5AA00B76BA3 /* Apple.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Apple.pdf; path = ../../../../Desktop/Apple.pdf; sourceTree = "<group>"; };
+		8410CC4D1D53B89600B76BA3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8410CC541D53BDB800B76BA3 /* libZipArchive-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libZipArchive-ios.a"; path = "ZipSampleiOS/ZipLib/libZipArchive-ios.a"; sourceTree = "<group>"; };
+		8410CC561D53C0B800B76BA3 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = ZipSampleiOS/ZipLib/ZipArchive.h; sourceTree = "<group>"; };
+		8410CC571D53CC2A00B76BA3 /* ZipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipManager.h; sourceTree = "<group>"; };
+		8410CC581D53CC2A00B76BA3 /* ZipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8410CC551D53BDB800B76BA3 /* libZipArchive-ios.a in Frameworks */,
+				8410CC4E1D53B89600B76BA3 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,9 @@
 		8410CBC11D53B47B00B76BA3 = {
 			isa = PBXGroup;
 			children = (
+				8410CC561D53C0B800B76BA3 /* ZipArchive.h */,
+				8410CC541D53BDB800B76BA3 /* libZipArchive-ios.a */,
+				8410CC4D1D53B89600B76BA3 /* libz.tbd */,
 				8410CBCC1D53B47B00B76BA3 /* ZipSampleiOS */,
 				8410CBE91D53B47B00B76BA3 /* ZipSampleiOSTests */,
 				8410CBF41D53B47B00B76BA3 /* ZipSampleiOSUITests */,
@@ -103,6 +121,8 @@
 		8410CBCC1D53B47B00B76BA3 /* ZipSampleiOS */ = {
 			isa = PBXGroup;
 			children = (
+				8410CC031D53B5AA00B76BA3 /* Android.pdf */,
+				8410CC041D53B5AA00B76BA3 /* Apple.pdf */,
 				8410CBD01D53B47B00B76BA3 /* AppDelegate.h */,
 				8410CBD11D53B47B00B76BA3 /* AppDelegate.m */,
 				8410CBD31D53B47B00B76BA3 /* ViewController.h */,
@@ -113,6 +133,8 @@
 				8410CBE11D53B47B00B76BA3 /* Info.plist */,
 				8410CBD91D53B47B00B76BA3 /* ZipSampleiOS.xcdatamodeld */,
 				8410CBCD1D53B47B00B76BA3 /* Supporting Files */,
+				8410CC571D53CC2A00B76BA3 /* ZipManager.h */,
+				8410CC581D53CC2A00B76BA3 /* ZipManager.m */,
 			);
 			path = ZipSampleiOS;
 			sourceTree = "<group>";
@@ -246,9 +268,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8410CC051D53B5AA00B76BA3 /* Android.pdf in Resources */,
 				8410CBE01D53B47B00B76BA3 /* LaunchScreen.storyboard in Resources */,
 				8410CBDD1D53B47B00B76BA3 /* Assets.xcassets in Resources */,
 				8410CBD81D53B47B00B76BA3 /* Main.storyboard in Resources */,
+				8410CC061D53B5AA00B76BA3 /* Apple.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8410CC591D53CC2A00B76BA3 /* ZipManager.m in Sources */,
 				8410CBD51D53B47B00B76BA3 /* ViewController.m in Sources */,
 				8410CBDB1D53B47B00B76BA3 /* ZipSampleiOS.xcdatamodeld in Sources */,
 				8410CBD21D53B47B00B76BA3 /* AppDelegate.m in Sources */,
@@ -285,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8410CBEB1D53B47B00B76BA3 /* ZipSampleiOSTests.m in Sources */,
+				8410CC5A1D53CC2A00B76BA3 /* ZipManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,10 +443,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$SOURCE_ROOT/include\n$SOURCE_ROOT/include\n$SOURCE_ROOT/include",
+				);
 				INFOPLIST_FILE = ZipSampleiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZipSampleiOS/ZipLib",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ZipSampleiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -428,10 +464,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$SOURCE_ROOT/include\n$SOURCE_ROOT/include\n$SOURCE_ROOT/include",
+				);
 				INFOPLIST_FILE = ZipSampleiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZipSampleiOS/ZipLib",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ZipSampleiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
